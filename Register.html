@@ -12,8 +12,12 @@
      overflow: hidden;
 }
 font{
-	font-family:"Impact", Charcoal, sans-serif;
+	font-family:"Impact", sans-serif, monospace;
 	font-size: 24px;
+}
+p{
+	font-family:monospace, "Impact", monospace;
+	font-size: 20px;
 }
 td {background-repeat:no-repeat;}
     
@@ -33,21 +37,21 @@ td {background-repeat:no-repeat;}
     position: absolute;
     top: 400;
     left: 0;
-    opacity: 0.9;
+    opacity: 0.65;
     filter: alpha(opacity=60);
 }
 #NewsUpdates {
     position: absolute;
     top: 445;
     left: 0;
-    opacity: 0.9;
+    opacity: 0.65;
     filter: alpha(opacity=60);
 }
 #TeamSchedule {
     position: absolute;
     top: 490;
     left: 0;
-    opacity: 0.9;
+    opacity: 0.65;
     filter: alpha(opacity=60);
 }
 #Donate {
@@ -76,29 +80,30 @@ td {background-repeat:no-repeat;}
     	<td cellspacing="0" cellpadding="0">                        
         <center>
             
-            <div id="wrapper">
+<div id="wrapper">
 		<video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" height="360" width="640">
-		<source src="https://dl.dropboxusercontent.com/u/16036872/FLan/Videos/Background1.mp4" type="video/mp4">
+		<source src="..\Videos\Background2.mp4" type="video/mp4">
           Sorry, your browser does not support HTML5 video.
 		</video>
+        <!--<img src="..\Images\GullyBGtest.jpg" width="1100" height="619">!-->
     
         <div id="BannerInfo">
-            <img src="https://dl.dropboxusercontent.com/u/16036872/FLan/Images/FLanbanner.png" height="128" width="545"><br />
+            <img src="..\Images\FLanbanner.png" height="128" width="545"><br />
             FLan is bringing HighLander to the Comp Lan scene. Come join us
             <br />on Mnth XX 2015 for a day of fragging, raffles, and cash prizes.
-            <br /> MoreFillerTextHere           
+            <br />           
         </div>
     
         <div id="Register">
-        <a href="index.html"><img src="https://dl.dropboxusercontent.com/u/16036872/FLan/Images/RegisterTeams.png" height="31" width="251"></a>
+        <a href="index.html"><img src="..\Images\RegisterTeams.png" height="31" width="251"></a>
         </div>
     
         <div id="NewsUpdates">
-        <a href="index.html"><img src="https://dl.dropboxusercontent.com/u/16036872/FLan/Images/NewsUpdates.png" height="31" width="251"></a>
+        <a href="index.html"><img src="..\Images\NewsUpdates.png" height="31" width="251"></a>
         </div>
     
         <div id="TeamSchedule">
-        <a href="index.html"><img src="https://dl.dropboxusercontent.com/u/16036872/FLan/Images/TeamsSchedules.png" height="31" width="251"></a>
+        <a href="index.html"><img id="TSched" src="..\Images\TeamsSchedules.png" height="31" width="251"></a>
         </div>
 </div>
             
@@ -107,24 +112,28 @@ td {background-repeat:no-repeat;}
     </tr>
     </table>
     
-    <table width="1100" align="center" cellspacing="0" cellpadding="0" background="https://dl.dropboxusercontent.com/u/16036872/FLan/Images/Gradient.gif">
+    <table width="1100" align="center" cellspacing="0" cellpadding="0" background="..\images\gradient.gif">
     <tr>
     <td>
-    <img src="https://dl.dropboxusercontent.com/u/16036872/FLan/Images/FlanTwitch.png" align="right">
+    <img src="..\images\flantwitch.png" align="right">
     </td>
     </tr>
     
     <tr>
     	<td>
-<center>
-<!-- This is the video stream !-->
-<object type="application/x-shockwave-flash" height="450" width="738" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=mangachu_" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel=gtglan&auto_play=true&start_volume=25" /></object>
-
-<!-- This is the chat box !-->
-<iframe frameborder="0" scrolling="no" src="http://twitch.tv/gtglan/chat?popout=" height="450" width="315"></iframe>
-		</center>
+        <p>    
+&emsp;&emsp;Please include the following information when submitting your registration fee:
+            <ul><ul>
+            <li>Player Name
+            <li>SteamID (Use <a href="http://steamidconverter.com/">SteamID Converter</a>)
+            <li>Primary Class you wish to play
+            <li>Secondary Class you wish to play
+            </ul></ul>
+&emsp;&emsp;If for any reason this information is not submitted please <a href="http://steamcommunity.com/id/migeto">Contact Me</a> so we can correct your registration.<br />
+&emsp;&emsp;If you and other players would like to register as a Team, please inform me of the Player Names and Team Name so I can make the correct changes.            
+        </p>
 <br />
-
+<br />
             </td>
         </tr>
         <tr>
@@ -133,12 +142,12 @@ td {background-repeat:no-repeat;}
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 &emsp;&emsp;<input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="EPN792RYKWTNU">
-<input type="image" src="https://dl.dropboxusercontent.com/u/16036872/FLan/Images/Donate.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<input type="image" src="..\images\donate.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                 </div>
                 <div id="DonateInfo">
 &emsp;&emsp;While FLan might be fun, setting up events like these can become time consuming and costly.<br />
 &emsp;&emsp;We would gladly accept any and all donations to keep the tournaments ongoing bianually. Thank You.
-<img alt="" border="0" src="https://dl.dropboxusercontent.com/u/16036872/FLan/Images/Donate.png" width="1" height="1">
+<img alt="" border="0" src="..\images\donate.png" width="1" height="1">
 </form>
                 </div>
         </td>
