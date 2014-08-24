@@ -12,7 +12,7 @@
      overflow: hidden;
 }
 font{
-	font-family:"Impact", Charcoal, sans-serif;
+	font-family:"Impact", sans-serif, monospace;
 	font-size: 24px;
 }
 td {background-repeat:no-repeat;}
@@ -49,6 +49,19 @@ td {background-repeat:no-repeat;}
     left: 0;
     opacity: 0.7;
     filter: alpha(opacity=60);
+}
+#Donate {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#DonateInfo {
+    position: relative;
+    top: -80;
+    left: 200;
+    font-size: 18px;
+    color: #D8D8D8;
+    font-family:"Impact", Charcoal, sans-serif;
 }
   
 </style>
@@ -116,24 +129,22 @@ td {background-repeat:no-repeat;}
         </tr>
         <tr>
             <td>
+                <div id="Donate">
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 &emsp;&emsp;<input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="EPN792RYKWTNU">
 <input type="image" src="..\images\donate.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<br />
+                </div>
+                <div id="DonateInfo">
 &emsp;&emsp;While FLan might be fun, setting up events like these can become time consuming and costly.<br />
 &emsp;&emsp;We would gladly accept ay and all donations to keep the tournaments ongoing bianually. Thank You.
 <img alt="" border="0" src="..\images\donate.gif" width="1" height="1">
 </form>
+                </div>
         </td>
     </tr>
 </table>
 
-<table width="100%">
-<tr>
-<td width="250" bgcolor="#000000">
-</td>
-<td>
 
 </body>
 </html>
