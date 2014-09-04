@@ -89,6 +89,18 @@ td {background-repeat:no-repeat;}
     position: relative;
     top: 0;
     left: 30;
+	font-family: sans-serif, monospace;
+	font-size: 14px;
+}
+#RegButton {
+    position: absolute;
+    top: 22;
+    left: 450;
+}
+#RegForm {
+    position: relative;
+    top: -370;
+    left: 450;
 }
   
 </style>
@@ -144,28 +156,91 @@ td {background-repeat:no-repeat;}
     
     <tr>
     	<td>
+            
             <div id="TourneyInfo">
+            <!--<div id="RegButton"><a href="Register.html"><img src="..\images\register.png"></a></div> !-->
             <br />
-<div id="InfoText">//general tourney info<br /></div>
+<div id="InfoText">General Tourney Info<br /></div>
                     Highlander Tournament will start at 11:30 AM on March 14th 2015<br />
                     The event will be hosted at Versus Gaming Center<br />
                     750 E Sample Rd #1, Pompano Beach, FL 33064<br />
             <br />    
-<div id="InfoText">//hotel info<br /></div>
+<div id="InfoText">Hotel Info<br /></div>
                     If you require a hotel to stay at I recommend the Extended Stay America<br />
                     1200 F.A.U. Research Park Blvd. | Deerfield Beach,  FL  33441<br />
             <br />    
-<div id="InfoText">//team prizes<br /></div>
+<div id="InfoText">Team Prizes<br /></div>
                     First Place Prize: (100 per player minimum)<br />
                     Second Place Prize:(30 dollars per player minimum)<br />
                     (These prizes will only go up as more players register)<br />
              <br />   
-<div id="InfoText">//mvp prizes<br /></div>
+<div id="InfoText">Mvp Prizes<br /></div>
                     Medic MVP: Bud<br />
                     Overall MVP: Bud<br />
              <br />   
-<div id="InfoText">//raffle prizes<br /></div>
-                    1 Bud & 2 Bill's will be raffled off during the event. Once at half time and the other at the conclusion<br />
+<div id="InfoText">Raffle Prizes<br /></div>
+                    1 Bud & 2 Bill's will be raffled off during the event.<br />
+                    Once at half time and the other at the conclusion<br />
+                
+                
+                <div id="RegForm">
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1119932653"><div class="ss-q-title">Player Name
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div></label>
+<input type="text" name="entry.1119932653" value="" class="ss-q-short" id="entry_1119932653" dir="auto" aria-label="Player Name Current Steam Name " aria-required="true" required="" title="">
+<div class="error-message" id="522430319_errorMessage"></div>
+    <br />
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_59144087"><div class="ss-q-title">SteamID (Use <a href="http://steamidconverter.com">steamidconverter.com</a>)
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div></label>
+<input type="text" name="entry.59144087" value="" class="ss-q-short" id="entry_59144087" dir="auto" aria-label="SteamID Use www.steamidconverter.com " aria-required="true" required="" title="">
+<div class="error-message" id="597128494_errorMessage"></div>
+    <br />
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-select"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1759173806"><div class="ss-q-title">Primary Class
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div></label>
+<select name="entry.1759173806" id="entry_1759173806" aria-label="Primary Class Select class you&#39;d like to play " aria-required="true" required=""><option value=""></option>
+<option value="Medic">Medic</option> <option value="Scout">Scout</option> <option value="Soldier">Soldier</option> <option value="Pyro">Pyro</option> <option value="Demoman">Demoman</option> <option value="Heavy">Heavy</option> <option value="Engineer">Engineer</option> <option value="Sniper">Sniper</option> <option value="Spy">Spy</option></select>
+    <br /><br />
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-select"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_2026442399"><div class="ss-q-title">In the event that there has to be off-classing, What other Class would you be able to play.
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div></label>
+<select name="entry.2026442399" id="entry_2026442399" aria-label="Secondary Class In the event that there has to be off-classing, What other Class would you be able to play. " aria-required="true" required=""><option value=""></option>
+<option value="Medic">Medic</option> <option value="Scout">Scout</option> <option value="Soldier">Soldier</option> <option value="Pyro">Pyro</option> <option value="Demoman">Demoman</option> <option value="Heavy">Heavy</option> <option value="Engineer">Engineer</option> <option value="Sniper">Sniper</option> <option value="Spy">Spy</option></select>
+    <br /><br />
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1809366064"><div class="ss-q-title">Input the email that&#39;s tied to your paypal account
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk">*</span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr">This will be used to cross-reference and ensure which players have paid or not.</div></label>
+<input type="text" name="entry.1809366064" value="" class="ss-q-short" id="entry_1809366064" dir="auto" aria-label="Input the email that&#39;s tied to your paypal account This will be used to cross-reference and ensure which players have paid or not. " aria-required="true" required="" title="">
+<div class="error-message" id="1983390318_errorMessage"></div>
+
+</div></div></div>
+<input type="hidden" name="draftResponse" value="[,,&quot;-2168643279958033599&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+
+<br />
+<input type="hidden" name="fbzx" value="-2168643279958033599">
+
+<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+<input type="submit" name="submit" value="Submit" id="ss-submit">
+</div>
+                
+                
+             <br />
+             <br />
+             <br />
              <br />
              <br />
             </div>
