@@ -64,6 +64,11 @@ td {background-repeat:no-repeat;}
     text-shadow: 2px 2px #585858;
     font-family:"Impact", Charcoal, sans-serif;
 }
+#infotable {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 1100px 700px;
+}
   
 </style>
 </head>
@@ -71,6 +76,21 @@ td {background-repeat:no-repeat;}
 
 
 <body bgcolor="#000000">
+
+<!--
+//THIS IS THE CODE FOR THE FBOOK FEED!
+!-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--
+//THIS IS THE CODE FOR THE FBOOK FEED!
+!-->
 
 
 <table width="1100" align="center" cellspacing="0" cellpadding="0">
@@ -88,8 +108,8 @@ td {background-repeat:no-repeat;}
             <img src="..\Images\FLanbanner.png" height="128" width="545"><br />
             FLan is bringing HighLander to the Comp Lan scene. Come join us
             <br />on March 14th 2015 for a day of fragging, raffles, and cash prizes.
-            <br />MoreFillerTextHere           
-        </div>s
+            <br />          
+        </div>
     
         <div id="Register">
         <a href="Info.html"><img src="..\Images\RegisterTeams.png" height="31" width="251"></a>
@@ -109,7 +129,7 @@ td {background-repeat:no-repeat;}
     </tr>
     </table>
     
-    <table width="1100" align="center" cellspacing="0" cellpadding="0" background="..\images\gradient.gif">
+    <table id="infotable" width="1100" align="center" cellspacing="0" cellpadding="0" background="..\Images\Viaduct 1100 x 619.bmp">
     <tr>
     <td>
     <img src="..\images\flantwitch.png" align="right">
@@ -118,16 +138,11 @@ td {background-repeat:no-repeat;}
     
     <tr>
     	<td>
-<center>
-<!-- This is the video stream !-->
-<object type="application/x-shockwave-flash" height="450" width="738" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=mangachu_" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel=gtglan&auto_play=true&start_volume=25" /></object>
-
-<!-- This is the chat box !-->
-<iframe frameborder="0" scrolling="no" src="http://twitch.tv/gtglan/chat?popout=" height="450" width="315"></iframe>
-		</center>
-<br />
-<br />
-            </td>
+        <center>
+        <div class="fb-like-box" data-href="https://www.facebook.com/tf2flan" data-width="1080" data-height="500" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false"></div>    
+         </center> 
+        <br />
+        </td>
         </tr>
         <tr>
             <td>
