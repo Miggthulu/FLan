@@ -1,0 +1,167 @@
+<head>
+<style>
+#videobcg { 
+     <!-- position: absolute;
+     top: 0px;
+     left: 0px; !-->
+     min-width: 1100;
+     min-height: 619;
+     width: 1100;
+     height: 619;
+	 z-index: -1000;
+     overflow: hidden;
+}
+font{
+	font-family:"Impact", sans-serif, monospace;
+	font-size: 24px;
+}
+td {background-repeat:no-repeat;}
+    
+#wrapper {
+    position: relative;
+    color: #D8D8D8;
+}
+#BannerInfo {
+    position: absolute;
+    top: 75;
+    left: 240;
+    color: #D8D8D8;
+    font-size: 24px;
+    color: #D8D8D8;
+}
+#Register {
+    position: absolute;
+    top: 400;
+    left: 0;
+    opacity: 0.65;
+    filter: alpha(opacity=60);
+}
+#NewsUpdates {
+    position: absolute;
+    top: 445;
+    left: 0;
+    opacity: 0.65;
+    filter: alpha(opacity=60);
+}
+#TeamSchedule {
+    position: absolute;
+    top: 490;
+    left: 0;
+    opacity: 0.65;
+    filter: alpha(opacity=60);
+}
+#Donate {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#DonateInfo {
+    position: relative;
+    top: -80;
+    left: 200;
+    font-size: 18px;
+    color: white;
+    text-shadow: 2px 2px #585858;
+    font-family:"Impact", Charcoal, sans-serif;
+}
+#infotable {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 1100px 700px;
+}
+  
+</style>
+</head>
+
+
+
+<body bgcolor="#000000">
+
+<!--
+//THIS IS THE CODE FOR THE FBOOK FEED!
+!-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--
+//THIS IS THE CODE FOR THE FBOOK FEED!
+!-->
+
+
+<table width="1100" align="center" cellspacing="0" cellpadding="0">
+	<tr cellspacing="0" cellpadding="0">
+    	<td cellspacing="0" cellpadding="0">                        
+        <center>
+            
+<div id="wrapper">
+		<video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" height="360" width="640">
+		<source src="..\Videos\Background1.mp4" type="video/mp4">
+          Sorry, your browser does not support HTML5 video.
+		</video>
+    
+        <div id="BannerInfo">
+            <img src="..\Images\FLanbanner.png" height="128" width="545"><br />
+            FLan is bringing HighLander to the Comp Lan scene. Come join us
+            <br />on March 14th 2015 for a day of fragging, raffles, and cash prizes.
+            <br />          
+        </div>
+    
+        <div id="Register">
+        <a href="Info.html"><img src="..\Images\RegisterTeams.png" height="31" width="251"></a>
+        </div>
+    
+        <div id="NewsUpdates">
+        <a href="News.html"><img src="..\Images\NewsUpdates.png" height="31" width="251"></a>
+        </div>
+    
+        <div id="TeamSchedule">
+        <a href="index.html"><img id="TSched" src="..\Images\TeamsSchedules.png" height="31" width="251"></a>
+        </div>
+</div>
+            
+        </center>      
+        </td>
+    </tr>
+    </table>
+    
+    <table id="infotable" width="1100" align="center" cellspacing="0" cellpadding="0" background="..\Images\Viaduct 1100 x 619.bmp">
+    <tr>
+    <td>
+    <img src="..\images\flantwitch.png" align="right">
+    </td>
+    </tr>
+    
+    <tr>
+    	<td>
+        <center>
+        <div class="fb-like-box" data-href="https://www.facebook.com/tf2flan" data-width="1080" data-height="500" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false"></div>    
+         </center> 
+        <br />
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="Donate">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+&emsp;&emsp;<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="EPN792RYKWTNU">
+<input type="image" src="..\images\donate.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                </div>
+                <div id="DonateInfo">
+&emsp;&emsp;While FLan might be fun, setting up events like these can become time consuming and costly.<br />
+&emsp;&emsp;We would gladly accept any and all donations to keep the tournaments ongoing bianually. Thank You.
+<img alt="" border="0" src="..\images\donate.png" width="1" height="1">
+</form>
+                </div>
+        </td>
+    </tr>
+</table>
+
+
+</body>
+</html>
